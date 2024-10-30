@@ -7,7 +7,7 @@ Node::Node() {
 }
 
 Node::~Node() {
-  delete &student;
+  delete student;
   next = NULL;
 }
 
