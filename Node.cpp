@@ -1,9 +1,9 @@
 #include <iostream>
 #include "Node.h"
 
-Node::Node() {
+Node::Node(Student* newStudent) {
   next = NULL;
-  student = NULL;
+  student = newStudent;
 }
 
 Node::~Node() {

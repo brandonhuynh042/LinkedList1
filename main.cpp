@@ -39,9 +39,8 @@ void addStudent(Student* newStudent, Node* &head) {
   Node* current = head;
   // in case the list is empty, make the head the new student
   if (current == NULL) {
-    head = new Node();
+    head = new Node(newStudent);
     cout << "adding student: " << newStudent->getID() << endl;
-    head->setStudent(newStudent);
   }
   else {
     // traverse to the end of the list
@@ -49,9 +48,8 @@ void addStudent(Student* newStudent, Node* &head) {
       current = current->getNext();
     }
     //add a new node to the end with the student
-    current->setNext(new Node());
+    current->setNext(new Node(newStudent));
       cout << "adding student: " << newStudent->getID() << endl;
-      current->getNext()->setStudent(newStudent);
   }
 }
 void printStudents(Node* head) {

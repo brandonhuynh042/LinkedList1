@@ -6,7 +6,7 @@ using namespace std;
 
 class Node {
  public:
-  Node();                                     // constructor
+  Node(Student* newStudent);                  // constructor
   ~Node();                                    // destructor
   void setStudent (Student* newStudent);      // setting the value of the node
   Student* getStudent();                      // getting the value of the node
